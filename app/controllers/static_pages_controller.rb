@@ -8,4 +8,10 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def create
+    @ticker = params[:ticker]
+    @stock = StockQuote::Stock.quote(@ticker)
+    render 'quote'
+  end
+
 end
