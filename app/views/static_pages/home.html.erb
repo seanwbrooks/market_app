@@ -1,11 +1,11 @@
 <% provide(:title, "Home") %>
 
 <body>
-<nav>
-  <li><a href="home.html.erb">Home</a></li>
-  <li><a href="quote.html.erb">Data</a></li>
-  <li><a href="about.html.erb">About</a></li>
-  <li><a href="help.html.erb">Help</a></li>
+<nav class="clearfix">
+  <li><a href="/static_pages/home">Home</a></li>
+  <li><a href="/static_pages/quote">Data</a></li>
+  <li><a href="/static_pages/about">About</a></li>
+  <li><a href="/static_pages/help">Help</a></li>
 </nav>
 <div class="header">
   <div class="title">
@@ -17,15 +17,17 @@
   </div>
 </div>
 
-<form class="stock_quote" action="/static_pages" method="post">
-  <input type="text" name="ticker" value="">
-  <input type="submit" name="" value="Ticker(s)">
-</form>
+<div class="ticker">
+  <form class="stock_quote" action="/static_pages" method="post">
+    <input type="text" name="ticker" value="">
+    <input type="submit" name="" value="Ticker(s)">
+  </form>
+</div>
 
 <footer>
-  <li><a href="static_pages/home">Home</a></li>
-  <li><a href="static_pages/quote">Data</a></li>
-  <li><a href="static_pages/about">About</a></li>
-  <li><a href="static_pages/help">Help</a></li>
+  <li><a href="/static_pages/home">Home</a></li>
+  <li><a href="/static_pages/quote">Data</a></li>
+  <li><a href="/static_pages/about">About</a></li>
+  <li><a href="/static_pages/help">Help</a></li>
 </footer>
 </body>
