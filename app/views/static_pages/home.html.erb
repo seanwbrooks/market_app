@@ -1,14 +1,24 @@
 <% provide(:title, "Home") %>
 
+<body>
+<nav>
+  <li><a href="home.html.erb">Home</a></li>
+  <li><a href="help.html.erb">Help</a></li>
+  <li><a href="about.html.erb">About</a></li>
+  <li><a href="quote.html.erb">Data</a></li>
+</nav>
 <div class="header">
-  <h1>Investics Banatics</h1>
-  <h3>Analytics for everyone!</h3>
+  <div class="title">
+    <h1>Analytics made with bonanas!</h1>
+  </div>
+  <div class="subtitle">
+    <h4>Investics Banatics is a platform for backtesting algorithms, managing assets, and understanding the abstractions of the market: data.
+      We make seeing your ideas simpler.</h4>
+  </div>
 </div>
-<p>Investics Banatics is a platform for backtesting your algorithms.
-    Here is your playground...
-</p>
 
 <form class="stock_quote" action="/static_pages" method="post">
   <input type="text" name="ticker" value="">
   <input type="submit" name="" value="Ticker(s)">
 </form>
+</body>
