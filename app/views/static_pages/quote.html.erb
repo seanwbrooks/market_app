@@ -1,1 +1,8 @@
-<%= "#{@ticker}: #{@stock.ask}"%>
+<% provide(:title, "Quote") %>
+
+<body>
+
+  <h1>Quote</h1>
+  <%= "#{@ticker}: #{@stock.ask}"%>
+
+</body>
