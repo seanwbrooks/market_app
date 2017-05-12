@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Investics Banatics</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Baskerville" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,6 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%=yield %>
   </body>
 </html>
