@@ -10,8 +10,15 @@ body {
   margin: auto;
   position: relative;
   max-width: 100%;
+  padding: 24rem 0rem 20rem;
+  margin-bottom: 0rem;
 }
 
+p {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* header */
 header {
   background-color: #eefd29;
 }
@@ -71,10 +78,6 @@ nav a {
   text-align: center;
 }
 
-p {
-  font-family: 'Indie Flower', cursive;
-}
-
 .ticker {
   max-width: 100%;
   margin: auto;
@@ -121,31 +124,42 @@ p {
   padding: .65rem .65rem;
 }
 
-footer {
-  display: block;
+/* footer */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 1rem;
+  background-color: black;
   text-align: center;
   margin: auto;
-  background: 2rem 2rem #eefd29;
-  color: black;
-  max-width: 100%;
-  padding: 1rem 1rem;
 }
 
-footer li {
+footer nav {
+  margin: auto;
+}
+
+footer nav ul {
+  margin: auto;
+}
+
+footer nav ul li {
   display: inline-block;
   list-style-type: none;
   padding: 1rem 1rem;
   text-align: center;
 }
 
-footer li a {
+footer nav ul li a {
   display: inline;
   text-align: center;
   padding: .5rem .5rem;
   text-decoration: none;
 }
 
-footer li a:hover {
+footer nav ul li a:hover {
   background-color: #111;
   border-radius: 50%;
   padding: .5rem .5rem;
