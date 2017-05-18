@@ -2,19 +2,19 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def help
-  end
-
   def about
   end
 
-  def quote
+  def contact
   end
 
   def create
     @ticker = params[:ticker]
     @stock = StockQuote::Stock.quote(@ticker)
-    render 'quote'
+    render 'data'
+  end
+
+  def data
   end
 
 end
