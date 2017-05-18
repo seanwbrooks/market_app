@@ -4,7 +4,7 @@
 /* universal */
 
 body {
-  background-color: #FFF;
+  background-color: white;
   font-family: 'Indie Flower', cursive;
   box-sizing: border-box;
   margin: auto;
@@ -46,25 +46,22 @@ nav {
   background: 2rem 2rem;
   display: inline-block;
   float: right;
-}
-
-nav li {
-  float: left;
-  list-style-type: none;
-  padding: 1rem 1rem;
-}
-
-nav li a:hover {
-  background-color: #111;
-  border-radius: 50%;
-  text-decoration: none;
-}
-
-nav a {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: .5rem .5rem;
+  li {
+    float: left;
+    list-style-type: none;
+    padding: 1rem 1rem;
+    a {
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding: .5rem .5rem;
+      &:hover {
+        background-color: #111;
+        border-radius: 50%;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .title {
@@ -118,7 +115,7 @@ nav a {
 }
 
 #ball-within-ball {
-  background-color: #FFF;
+  background-color: white;
   color: black;
   border-radius: 50%;
   padding: .65rem .65rem;
@@ -137,31 +134,29 @@ nav a {
   margin: auto;
 }
 
-footer nav {
-  margin: auto;
-}
-
-footer nav ul {
-  margin: auto;
-}
-
-footer nav ul li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 1rem 1rem;
-  text-align: center;
-}
-
-footer nav ul li a {
-  display: inline;
-  text-align: center;
-  padding: .5rem .5rem;
-  text-decoration: none;
-}
-
-footer nav ul li a:hover {
-  background-color: #111;
-  border-radius: 50%;
-  padding: .5rem .5rem;
-  text-decoration: none;
+footer {
+  nav {
+    margin: auto;
+    ul {
+      margin: auto;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 1rem 1rem;
+        text-align: center;
+        a {
+          display: inline;
+          text-align: center;
+          padding: .5rem .5rem;
+          text-decoration: none;
+          &:hover {
+            background-color: #111;
+            border-radius: 50%;
+            padding: .5rem .5rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
