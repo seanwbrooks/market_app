@@ -93,6 +93,34 @@
     padding: .65rem .65rem;
   }
 
+  #tic-tac-toe {
+    h1 {
+      margin: auto;
+      text-align: center;
+      padding: 1rem 1rem;
+    }
+  }
+  table {
+    margin: auto;
+    padding: 1rem;
+    margin-top: 8rem;
+  }
+
+  .square {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .v {
+    border-left: .0625rem solid black;
+    border-right: .0625rem solid black
+  }
+
+  .h {
+    border-top: .0625rem solid black;
+    border-bottom: .0625rem solid black
+  }
+
   footer {
     display: block;
     background: 2rem 2rem #eefd29;

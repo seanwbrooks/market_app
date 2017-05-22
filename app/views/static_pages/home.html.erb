@@ -1,7 +1,7 @@
 <% provide(:title, "Home") %>
 
 <body>
-  
+
 <div class="ticker">
   <form class="stock_quote" action="/static_pages" method="post">
     <input type="text" name="ticker" value="">
@@ -18,6 +18,27 @@
         </div>
       </div>
     </div>
+</div>
+
+<div id="tic-tac-toe">
+  <h1>Tic Tac Toe</h1>
+  <table>
+    <tr id="first-row">
+      <td class="square"></td>
+      <td class="square v"></td>
+      <td class="square"></td>
+    </tr>
+    <tr id="second-row">
+      <td class="square h"></td>
+      <td class="square v h"></td>
+      <td class="square h"></td>
+    </tr>
+    <tr id="third-row">
+      <td class="square"></td>
+      <td class="square v"></td>
+      <td class="square"></td>
+    </tr>
+  </table>
 </div>
 
 </body>
