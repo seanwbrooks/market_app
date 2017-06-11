@@ -3,6 +3,11 @@
 <body>
 
   <h1>Data</h1>
-  <%= "#{@ticker}: #{@stock.ask}"%>
-
+  <div>
+    <% @stocks.each do |stock| %>
+    <div>
+      <%= "#{stock.name}: #{stock.ask}"%>
+    </div>
+    <% end %>
+  </div>
 </body>

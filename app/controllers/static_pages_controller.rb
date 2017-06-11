@@ -9,8 +9,8 @@ class StaticPagesController < ApplicationController
   end
 
   def create
-    @ticker = params[:ticker]
-    @stock = StockQuote::Stock.quote(@ticker)
+    @tickers = params[:ticker]
+    @stocks = StockQuote::Stock.quote(@tickers.split(' '))
     render 'data'
   end
 
